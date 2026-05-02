@@ -1,7 +1,13 @@
-# In your local repo
+# Clone your repo (skip if already cloned)
+git clone https://github.com/superployy/RAAxGAME.git
+cd RAAxGAME
+
+# Move everything from discord-bot/ to root
 mv discord-bot/* .
-mv discord-bot/.env .
+mv discord-bot/.env.example .   # move hidden files too
 rmdir discord-bot
+
+# Commit and push
 git add -A
-git commit -m "move files to repo root"
+git commit -m "fix: move project files to repo root for Railway"
 git push
